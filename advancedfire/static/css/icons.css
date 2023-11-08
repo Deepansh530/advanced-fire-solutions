@@ -1,0 +1,17 @@
+.dumpster-fire{
+    display: inline-block;
+    position: relative;
+}
+
+.dumpster-fire::before {
+    content: "\f794"; /* Unicode for the camera-retro icon */
+    font-family: "Font Awesome 5 free"; /* Specify the Duotone font */
+    color: #222;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.dumpster-fire:hover::before {
+    transform: rotateY(180deg);
+    color: #ff5733; /* Change to the desired color */
+}
