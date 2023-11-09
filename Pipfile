@@ -9,6 +9,8 @@ mysql-client = "*"
 mysqlclient = "*"
 django-tinymce = "*"
 pillow = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 
