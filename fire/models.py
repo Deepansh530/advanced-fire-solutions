@@ -8,7 +8,7 @@ class Staff(models.Model):
     name = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250,primary_key=True)
     photo = models.ImageField(upload_to='staff_photos/')
-    post = models.TextField()
+    post = models.CharField(max_length=50)
     detail = HTMLField()
 
     def __str__(self):
